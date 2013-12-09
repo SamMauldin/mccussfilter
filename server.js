@@ -50,7 +50,7 @@ module.exports = function(client, swears, argv) {
 				msg = msg.split(" ");
 				msg.forEach(function(v) {
 					swears.forEach(function(w) {
-						if (v == w) {
+						if (v.toLowerCase() == w.toLowerCase()) {
 							clean = false;
 						}
 					});
